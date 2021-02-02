@@ -1,3 +1,10 @@
+cars = [{'model' : 'bmw', 'vin' : 12323234, 'year' : 1994},
+        {'model' : 'audi', 'vin' : 219883, 'year' : 2008},
+        {'model' : 'mercedes', 'vin' : 4543534, 'year' : 2001}]
+cars_new = [cars[i] for i in range(len(cars)) if cars[i]['year'] > 2000]
+cars_new = [car for car in cars if car['year'] > 2000]
+print(cars_new)
+
 # name_list = ['alex', 'masha']
 # hello = lambda name: [f'hello {i}' for i in name]
 # print((hello(name_list)))
