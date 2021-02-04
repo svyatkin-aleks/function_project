@@ -1,8 +1,6 @@
 def delete_even(func):
     def delete():
         print(list(filter(lambda x: x % 2 != 0, func())))
-        return delete
-
     return delete
 
 @delete_even
